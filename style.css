@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&family=Kalam:wght@700&family=Roboto&family=Varela+Round&family=Ysabeau+SC&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+/*  font-family: 'Chela One', cursive;*/
+/*  font-family: 'Kalam', cursive;*/
+  font-family: 'Roboto', sans-serif;
+/*  font-family: 'Ysabeau SC', sans-serif;*/
+/*  font-family: 'Varela Round', sans-serif;*/
+  -webkit-tap-highlight-color: transparent;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+/*  overflow: hidden;*/
+}
+.container{
+  height: 100vh;
+  background: #1e2e3d;
+  width: 400px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  color: whitesmoke;
+}
+.sign-in-div,.register-div{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #1e2e3d;
+
+}
+.text-div{
+  height: 200px;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  padding: 30px;
+  grid-gap: 20px;
+  justify-content: center;
+}
+.text-div h1{
+  font-weight: 1000;
+  font-size: 40px;
+}
+form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 400px;
+  width: 100%;
+  background: whitesmoke;
+  grid-gap: 20px;
+}
+.register-div form {
+  z-index: 100;
+  height: 500px;
+}
+.box{
+  height: 60px;
+  width: 90%;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 12px;
+  position: relative;
+}
+.box::before{
+  content: "Email";
+  color: #a0a3a6;
+  position: absolute;
+  left: 5%;
+  background: whitesmoke;
+  padding: 5px;
+  text-align: center;
+  width: 60px;
+  top: -25%;
+  z-index: 100;
+}
+.box:nth-child(2)::before{
+  content: "Password";
+}
+
+.register-div .box:nth-child(1)::before{
+  content: "Name";
+}
+.register-div .box:nth-child(2)::before{
+  content: "Email";
+}
+.register-div .box:nth-child(3)::before{
+  content: "Password";
+}
+
+.register-div .box:nth-child(4)::before{
+  content: "Password";
+}
+.box input{
+  height: 100%;
+  padding: 20px;
+  width: 90%;
+  background: none;
+  border: none;
+  outline: none;
+}
+.fp{
+  padding: 20px;
+  padding-left: 200px;
+}
+.fp a{
+  color: #93ac67;
+  text-decoration: none;
+}
+.login-btn{
+  border: none;
+  font-size: 20px;
+  font-weight: 1000;
+  height: 60px;
+  width: 90%;
+  background: #c0e862;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.register-div .login-btn{
+  margin-top: 50px;
+}
+.fa-eye,.fa-eye-slash{
+  color: black;
+  font-size: 15px;
+  right: 3%;
+  position: absolute;
+  padding: 20px;
+  cursor: pointer;
+}
+.fa-eye{
+  display: none;
+}
+.olw{
+  height: 250px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: black;
+  position: relative;
+  background: whitesmoke;
+}
+.register-div .olw{
+  height: 100px;
+}
+.olw-icon-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  grid-gap: 20px;
+  height: 100px;
+  width: 100%;
+}
+.icon{
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-weight: 1000;
+  grid-gap: 15px;
+  padding: 15px;
+  width: 40%;
+}
+.icon a{
+  text-decoration: none;
+  color: #1e2e3d;
+}
+
+.olw p{
+  width: 100%;
+  position: absolute;
+  color: #1e2e3d;
+  font-weight: 1000;
+  bottom: 20%;
+}
+.olw p a{
+  color: #a5c95c;
+  text-decoration: none;
+}
+.register-div{
+  left: -100%;
+  position: absolute;
+}
+.back{
+  cursor: pointer;
+  top: 20px;
+  position: absolute;
+  font-size: 30px;
+}
